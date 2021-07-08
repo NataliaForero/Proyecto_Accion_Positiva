@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    
     <link rel="stylesheet" href="scr/utils/CSS/styles.css"> <!--css styles-->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--iconos-->
     <title>Acción Positiva</title>
@@ -17,10 +20,10 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="scr/nosotras.html" class="nav__link">Nosotras</a></li>
-                    <li class="nav__item"><a href="scr/numeros de ayuda.html" class="nav__link">Números de ayuda</a></li>
-                    <li class="nav__item"><a href="scr/centros_de_ayuda.html" class="nav__link">Centros de ayuda</a></li>
-                    <li class="nav__item"><a href="scr/como_puedo_ayudar.html" class="nav__link">¿Cómo puedo ayudar?</a></li>
+                    <li class="nav__item"><a href="scr/utils/pages/nosotras.html" class="nav__link">Nosotras</a></li>
+                    <li class="nav__item"><a href="scr/utils/pages/numeros de ayuda.html" class="nav__link">Números de ayuda</a></li>
+                    <li class="nav__item"><a href="scr/utils/pages/centros_de_ayuda.html" class="nav__link">Centros de ayuda</a></li>
+                    <li class="nav__item"><a href="scr/utils/pages/como_puedo_ayudar.html" class="nav__link">¿Cómo puedo ayudar?</a></li>
                 </ul>
             </div>
 <!--============= hamburguesa =====-->
@@ -31,7 +34,7 @@
     </header>
 </head>
 <body>
-    <main class="l-main">
+       <main class="l-main">
         <div class="container">
             <img class="abrazo" src="scr/utils/images/abrazo.jpeg" alt="">
             <div class="centros"> <p class="footer__title">Acción positiva</p></div>
@@ -41,19 +44,68 @@
             <div class="footer__title">Conceptos</div>
         </footer>
    
-            <main class="contenido-principal">
-                <img src="scr/utils/images/1.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
-                <div class="contenido-principal__contenedor">
-                    <h1 class="contenido-principal__titulo">¿Qué es violencia de genero?</h1>
-                    <p class="contenido-principal__resumen">
-                        Se entiende por violencia de género cualquier acto violento o agresión, basados en una situación de desigualdad en el marco de un sistema de relaciones de dominación de los hombres sobre las mujeres que tenga o pueda tener como consecuencia un daño físico, sexual o psicológico, incluidas las amenazas de tales actos y la coacción o privación arbitraria de la libertad, tanto si ocurren en el ámbito público como en la vida familiar o personal.
-                    </p>
-                    <p class="contenido-principal__resumen">
-                        
-                    </p>
-                </div>
-            </main>
-            
+        <div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="img/2.png" alt="Rock and Roll Hall of Fame">
+						<p>Rock and Roll Hall of Fame</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/3.png" alt="Constitution Square - Tower I">
+						<p>Constitution Square - Tower I</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/4.png" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/5.png" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="img/6.png" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/7.png" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/8.png" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/9.png" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+
+
+
+            <div class="contenedor">
+                <main class="contenido-principal">
+                    <img src="scr/utils/images/1.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+                    <div class="contenido-principal__contenedor">
+                        <h1 class="contenido-principal__titulo">¿Qué es violencia de genero?</h1>
+                        <p class="contenido-principal__resumen">
+                            Se entiende por violencia de género cualquier acto violento o agresión, basados en una situación de desigualdad en el marco de un sistema de relaciones de dominación de los hombres sobre las mujeres que tenga o pueda tener como consecuencia un daño físico, sexual o psicológico, incluidas las amenazas de tales actos y la coacción o privación arbitraria de la libertad, tanto si ocurren en el ámbito público como en la vida familiar o personal.
+                        </p> 
+                    </div>
+                </main>
+
+
             <main class="contenido-principal">
                 
                 <div class="contenido-principal__contenedor">
@@ -67,18 +119,20 @@
                 </div>
                 <img src="scr/utils/images/1.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
             </main>
-            <main class="contenido-principal">
-                <img src="scr/utils/images/1.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
-                <div class="contenido-principal__contenedor">
-                    <h1 class="contenido-principal__titulo">¿Qué es violencia de genero?</h1>
-                    <p class="contenido-principal__resumen">
-                        Se entiende por violencia de género cualquier acto violento o agresión, basados en una situación de desigualdad en el marco de un sistema de relaciones de dominación de los hombres sobre las mujeres que tenga o pueda tener como consecuencia un daño físico, sexual o psicológico, incluidas las amenazas de tales actos y la coacción o privación arbitraria de la libertad, tanto si ocurren en el ámbito público como en la vida familiar o personal.
-                    </p>
-                    <p class="contenido-principal__resumen">
-                        
-                    </p>
-                </div>
-            </main>
+        </div>
+
+            <div class="contenedor">
+                <main class="contenido-principal">
+                    <img src="scr/utils/images/1.jpg" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+                    <div class="contenido-principal__contenedor">
+                        <h1 class="contenido-principal__titulo">¿Qué es violencia de genero?</h1>
+                        <p class="contenido-principal__resumen">
+                            Se entiende por violencia de género cualquier acto violento o agresión, basados en una situación de desigualdad en el marco de un sistema de relaciones de dominación de los hombres sobre las mujeres que tenga o pueda tener como consecuencia un daño físico, sexual o psicológico, incluidas las amenazas de tales actos y la coacción o privación arbitraria de la libertad, tanto si ocurren en el ámbito público como en la vida familiar o personal.
+                        </p> 
+                    </div>
+                </main>
+
+
             <main class="contenido-principal">
                 
                 <div class="contenido-principal__contenedor">
@@ -97,9 +151,6 @@
        
 
     </main>
-
-
-
 <!--===== FOOTER =====-->
 <footer class="footer">
     <p class="footer__title">Acción Positiva</p>
@@ -112,6 +163,6 @@
 </footer>
 
 <!--===== MAIN JS =====-->
-<script src="scr/utils/js/index.js"></script>  
+<script src="scr/utils/js/index.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
-</html>
