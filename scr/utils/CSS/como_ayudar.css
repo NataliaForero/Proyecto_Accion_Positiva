@@ -11,7 +11,7 @@ padding: 20px;
  }
 #imagenytitulo{
 	height: 55vh;
-
+    background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
