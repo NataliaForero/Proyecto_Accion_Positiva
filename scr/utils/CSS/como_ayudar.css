@@ -1,0 +1,133 @@
+.padre{
+width: 98%;
+margin: 20px auto;
+  grid-gap: 20px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+font-family: Poppins;
+}
+
+ .padre div {
+
+padding: 20px;
+ }
+#imagenytitulo{
+	height: 55vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color:white;
+    background-repeat: no-repeat;
+ background-image: url('./images/ayudar') ; 
+	
+}
+.cuadro {
+display: flex;
+flex-direction: column; 
+align-items: center;
+}
+#acuarela{
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+	background-image: url('./images/acuarela'); 
+	background-repeat: no-repeat;
+    color: white;}
+
+
+/*estilos para las columnas*/
+#columnas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 13px;
+	text-align: center;
+}
+#columnas h3 {
+    top: 10px;
+    left: 10px;
+}
+#columnas img {
+	position: relative;
+}
+#columna_izquierda{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+	
+}
+#columna_central{
+	margin-top: 200px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+#columna_derecha{
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;}
+/*estilos para los cuadros*/	
+
+#columna_central .cuadro{
+	margin-top: 100px;
+}
+/*estilos para los responsivos*/
+@media screen and (min-width:801px) and (max-width:1025px) {
+
+}
+@media screen and (min-width:421px) and (max-width:800px) {
+	
+	#imagenytitulo{
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color:white;
+    background-repeat: no-repeat;
+) ; 
+	
+}
+
+}
+@media screen and (min-width:375px) and (max-width:420px){
+	
+#columnas{
+	display: grid;
+	grid-template-columns: auto;
+	font-size: 8px;
+}
+.padre{
+width: 98%;
+margin: 20px auto;
+  grid-gap: 1px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+font-family: Poppins;
+}
+#columna_central{
+	margin-top: 0px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}	
+
+}
+@media screen and (min-width:200px) and (max-width:374px){
+	#columnas{
+	display: grid;
+	grid-template-columns: auto;
+	font-size: 8px;
+}
+.padre{
+width: 98%;
+margin: 20px auto;
+  grid-gap: 1px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+font-family: Poppins;
+}
+#columna_central{
+	margin-top: 0px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+}
