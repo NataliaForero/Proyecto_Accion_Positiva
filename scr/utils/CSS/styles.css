@@ -135,7 +135,7 @@ ul{
       width: 80%;
       height: 100%;
       padding: 2rem;
-      background-color: var(--second-color);
+      background-color: black;
       transition: .5s;
     }
   }
@@ -162,7 +162,7 @@ ul{
     color: #F7EEE0;
   }
   .nav__toggle{
-    color: var(--second-color);
+    color: #F7EEE0;
     font-size: 1.5rem;
     cursor: pointer;
   }
@@ -330,6 +330,9 @@ ul{
 
 
 /* --- ------------------- CAROUSEL --- --- */
+* {
+	box-sizing: border-box;
+}
   .contenedor {
     max-width: 1200px;
     width: 90%;
@@ -363,78 +366,7 @@ ul{
   .contenido-principal__resumen {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
-    color: #CFCFCF;
+    color: #070707;
   }
   
   /* --- --- CAROUSEL --- --- */
-  .carousel__contenedor {
-    position: relative;
-  }
-  
-  .carousel__anterior,
-  .carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: #fff;
-    opacity: 20%;
-  }
-  
-  .carousel__anterior:hover,
-  .carousel__siguiente:hover {
-    opacity: 100%;
-  }
-  
-  .carousel__anterior {
-    left: -30px;
-  }
-  
-  .carousel__siguiente {
-    right: -30px;
-  }
-  
-  .carousel__lista {
-    overflow: hidden;
-  }
-  
-  .carousel__elemento {
-    text-align: center;
-  }
-  
-  .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-  }
-  
-  .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-  }
-  
-  .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-  }
-  
-  @media screen and (max-width: 800px) {
-    body {
-      padding: 40px 0;
-    }
-  
-    .contenido-principal {
-      flex-direction: column;
-    }
-  
-    .contenido-principal > * {
-      width: 100%;
-    }
-  }

@@ -24,3 +24,23 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+/*funciones del carrousel*/
+  
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
