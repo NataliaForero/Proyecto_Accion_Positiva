@@ -24,36 +24,68 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+ 
+
 
 
 /*funciones del carrousel*/
-  
-window.addEventListener('load', function(){
-	new Glider(document.querySelector('.carousel__lista'), {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: '.carousel__indicadores',
-		arrows: {
-			prev: '.carousel__anterior',
-			next: '.carousel__siguiente'
-		},
-		responsive: [
-			{
-			  // screens greater than >= 775px
-			  breakpoint: 450,
-			  settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 2,
-				slidesToScroll: 2
-			  }
-			},{
-			  // screens greater than >= 1024px
-			  breakpoint: 800,
-			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 4
-			  }
-			}
-		]
+const fila = document.querySelector('.contenedor-carousel');
+const peliculas = document.querySelectorAll('.pelicula');
+
+const flechaIzquierda = document.getElementById('flecha-izquierda');
+const flechaDerecha = document.getElementById('flecha-derecha');
+
+// ? ----- ----- Event Listener para la flecha derecha. ----- -----
+flechaDerecha.addEventListener('click', () => {
+	fila.scrollLeft += fila.offsetWidth;
+
+	const indicadorActivo = document.querySelector('.indicadores .activo');
+	if(indicadorActivo.nextSibling){
+		indicadorActivo.nextSibling.classList.add('activo');
+		indicadorActivo.classList.remove('activo');
+	}
+});
+
+// ? ----- ----- Event Listener para la flecha izquierda. ----- -----
+flechaIzquierda.addEventListener('click', () => {
+	fila.scrollLeft -= fila.offsetWidth;
+
+	const indicadorActivo = document.querySelector('.indicadores .activo');
+	if(indicadorActivo.previousSibling){
+		indicadorActivo.previousSibling.classList.add('activo');
+		indicadorActivo.classList.remove('activo');
+	}
+});
+
+// ? ----- ----- Paginacion ----- -----
+const numeroPaginas = Math.ceil(peliculas.length / 5);
+for(let i = 0; i < numeroPaginas; i++){
+	const indicador = document.createElement('button');
+
+	if(i === 0){
+		indicador.classList.add('activo');
+	}
+
+	document.querySelector('.indicadores').appendChild(indicador);
+	indicador.addEventListener('click', (e) => {
+		fila.scrollLeft = i * fila.offsetWidth;
+
+		document.querySelector('.indicadores .activo').classList.remove('activo');
+		e.target.classList.add('activo');
 	});
+}
+
+// ? ----- ----- Hover ----- -----
+peliculas.forEach((pelicula) => {
+	pelicula.addEventListener('mouseenter', (e) => {
+		const elemento = e.currentTarget;
+		setTimeout(() => {
+			peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
+			elemento.classList.add('hover');
+		}, 300);
+	});
+});
+
+fila.addEventListener('mouseleave', () => {
+	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });

@@ -344,7 +344,7 @@ ul{
   .contenido-principal {
     margin-bottom: 50px;
     display: flex;
-    align-items: center;
+    align-items: center; 
   }
   
   .contenido-principal__imagen {
@@ -352,6 +352,18 @@ ul{
     margin-right: 20px;
     width: 50%;
     max-width: 550px;
+  }
+  .contenido-principal2{
+    background-color: black;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center; 
+  }
+  .contenido-principal3{
+    background-color: rgb(222, 198, 255);
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center; 
   }
   
   .contenido-principal__contenedor {
@@ -368,65 +380,12 @@ ul{
     line-height: 30px;
     color: #070707;
   }
-  
-  /* --- --- CAROUSEL --- --- */
-  .carousel__contenedor {
-    position: relative;
+  .contenido-principal__resumen2{
+    color: white;
   }
+  /* --- ----------- CAROUSEL ----------- --- */
   
-  .carousel__anterior,
-  .carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: #fff;
-    opacity: 20%;
-  }
-  
-  .carousel__anterior:hover,
-  .carousel__siguiente:hover {
-    opacity: 100%;
-  }
-  
-  .carousel__anterior {
-    left: -30px;
-  }
-  
-  .carousel__siguiente {
-    right: -30px;
-  }
-  
-  .carousel__lista {
-    overflow: hidden;
-  }
-  
-  .carousel__elemento {
-    text-align: center;
-  }
-  
-  .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-  }
-  
-  .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-  }
-  
-  .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-  }
+
   
   @media screen and (max-width: 800px) {
     body {
@@ -483,7 +442,7 @@ ul{
 .p1{
 
   font-weight: bold;
-  color: red;
+  color: #FF5D5D;
   font-size: 30px;
 
 }
@@ -542,3 +501,373 @@ ul{
   line-height: 37px;
   color: #070707;
 }
+.imagenfinal{
+  justify-content: center;
+  display: flex;
+}
+
+/* Estilo Centros de ayuda */
+
+
+.div3c{
+
+  width: 100%;
+  height: 400px;
+  background-image: url("../../images/fondo2.jpg");
+  font-size: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.div4c{
+
+  padding-top: 140px;
+  margin-left: 270px;
+
+}
+
+.txt{
+
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color:  #FF5D5D;
+  margin-top: 20px;
+
+}
+
+.bot{
+
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 150px;
+  background-color: #5a2bd1;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 10px;
+  margin-left: 43%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+
+}
+
+.divmap{
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+}
+
+.map{
+
+  height: 350px;
+  width: 300px;
+  background-color: black;
+  margin-bottom: 30px;
+  margin-left: 45px;
+}
+
+.mp{
+
+margin-top: 15px;
+margin-left: 24px;
+
+}
+
+.bot2{
+
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  width: 75px;
+  background-color: #5a2bd1;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  padding: 5px;
+  margin-left: 36%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-decoration: none;
+
+}
+
+.ub{
+
+  color: white;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+
+}
+
+.diva{
+
+  height: 312px;
+  width: 250px;
+  margin-top: 100px;
+  margin-left: 250px;
+  background-image: url(" ../images/igualdad.jpg");
+  background-size: 250px 250px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+
+.divc{
+
+  display: flex;
+
+}
+
+
+.divb{
+
+  background-color: white;
+  height: 312px;
+  width: 270px;
+  margin-top: 100px;
+  background-size: 250px 250px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+
+.divfok{
+
+  margin-top: 15px;
+  margin-left: 190px;
+  border-radius: 100%;
+  color: darkred;
+  border: 4px solid darkred;
+  height: 30px;
+  width: 35px;
+}
+
+.loc{
+
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 140px;
+
+}
+
+.p3{
+
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: #5a2bd1;
+
+}
+
+.p4{
+
+
+  text-align:justify;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+
+/* Modales */
+
+
+.modalDialog {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  z-index: 99999;
+  opacity:0;
+  background: rgba(0,0,0,0.8);
+  pointer-events: none;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: flex;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+
+.close {
+
+font-family: 'Nunito', sans-serif;
+color: darkred;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+margin-left: 12px;
+}
+
+.close:hover{
+
+color: #AD2016;
+
+}
+
+
+
+
+ /*como ayudar*/
+
+ .padre{
+  width: 98%;
+  margin: 20px auto;
+    grid-gap: 20px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+  font-family: Poppins;
+  }
+  
+   .padre div {
+  
+  padding: 20px;
+   }
+  #imagenytitulo{
+    height: 55vh;
+      background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      color:white;
+      background-repeat: no-repeat;
+   background-image: url('../images/ayudar.jpeg') ; 
+    
+  }
+  .cuadro {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  }
+  #acuarela{
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 100px;
+    background-image: url('../images/acuarela.jpeg'); 
+    background-repeat: no-repeat;
+      color: white;}
+  
+  
+  /*estilos para las columnas*/
+  #columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 13px;
+    text-align: center;
+  }
+  #columnas h3 {
+      top: 10px;
+      left: 10px;
+  }
+  #columnas img {
+    position: relative;
+  }
+  #columna_izquierda{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  #columna_central{
+    margin-top: 200px;
+    display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+  
+  
+  }
+  #columna_derecha{
+    display: grid;
+      grid-template-rows: 1fr 1fr 1fr;}
+  /*estilos para los cuadros*/	
+  
+  #columna_central .cuadro{
+    margin-top: 100px;
+  }
+  /*estilos para los responsivos*/
+  @media screen and (min-width:801px) and (max-width:1025px) {
+  
+  }
+  @media screen and (min-width:421px) and (max-width:800px) {
+    
+    #imagenytitulo{
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      color:white;
+      background-repeat: no-repeat;
+  ) ; 
+  }
+  }
+  @media screen and (min-width:375px) and (max-width:420px){
+    
+  #columnas{
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 8px;
+  }
+  .padre{
+  width: 98%;
+  margin: 20px auto;
+  grid-gap: 1px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+  font-family: Poppins;
+  }
+  #columna_central{
+    margin-top: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }	
+  
+  }
+  @media screen and (min-width:200px) and (max-width:374px){
+    #columnas{
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 8px;
+  }
+  .padre{
+  width: 98%;
+  margin: 20px auto;
+  grid-gap: 1px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
+  font-family: Poppins;
+  }
+  #columna_central{
+    margin-top: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  }
+
+
