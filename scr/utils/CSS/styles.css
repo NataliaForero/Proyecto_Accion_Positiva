@@ -283,6 +283,7 @@ ul{
     font-size: 45px;
     text-align: center;
     font-weight: var(--font-semi); 
+    
 }
 .container{
     position: relative;
@@ -739,10 +740,9 @@ color: #AD2016;
 
 
 
+/*como ayudar*/
 
- /*como ayudar*/
-
- .padre{
+.padre{
   width: 98%;
   margin: 20px auto;
     grid-gap: 20px; /*este coloca los espaciados pero solo entre contenidos pero no a ls bordes de la página*/
@@ -826,9 +826,8 @@ color: #AD2016;
     display: flex;
     align-items: center;
     justify-content: center;
-      color:white;
-      background-repeat: no-repeat;
-  ) ; 
+    color:white;
+    background-repeat: no-repeat; 
   }
   }
   @media screen and (min-width:375px) and (max-width:420px){
@@ -871,3 +870,4 @@ color: #AD2016;
   }
 
 
+ 
