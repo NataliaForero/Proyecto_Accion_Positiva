@@ -445,8 +445,6 @@ ul{
 
 /* --- ----- numeros de ayuda  ------ --- */
 
-  
- 
 
 .div4{
 
@@ -529,4 +527,18 @@ ul{
   align-items: center;
   line-height: 30px;
   margin: 35px 35px;
+}
+.section-title-2{
+  line-height: 60px;
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+.contenido-principal__resumen1 {
+  font-family: 'poppins', sans-serif;
+  line-height: 37px;
+  color: #070707;
 }
